@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>CSS - FORMS</title>
+  </head>
+  <body>
+    <header>
+      <h1>forms using CSS</h1>
+    </header>
+    <section>
+      <div class="form-container">
+        <form action="#" method="post">
+          <div class="form-element">
+            <label for="first-name">First Name</label><br />
+            <input
+              type="text"
+              name="fName"
+              id="first-name"
+              autocomplete="off"
+              placeholder="First name"
+            />
+            <br />
+            <label for="last-name">Last Name</label><br />
+            <input
+              type="text"
+              name="lName"
+              id="last-name"
+              autocomplete="off"
+              placeholder="Last name"
+            />
+            <br /><br />
+            <label for="country-selection">Country</label>
+            <select name="country" id="country-selection">
+              <option value="London" selected>London</option>
+              <option value="paris">Paris</option>
+              <option value="amst">Amsterdam</option>
+              <option value="spain">Spain</option></select
+            ><br /><br />
+            <label for="comments">Tell us your opinion!</label><br /><br />
+            <textarea
+              name="message"
+              id="comments"
+              placeholder="Write anything you want here"
+            ></textarea>
+            <input type="submit" value="Apply" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

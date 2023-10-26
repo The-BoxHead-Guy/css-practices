@@ -1,0 +1,49 @@
+/* 
+
+    Universal Selector
+    It adds whatever change to the entire page
+
+ */
+* {
+    background-color: ghostwhite;
+    color: darksalmon;
+}
+
+/* Best practice */
+h1 {
+    /* color: aqua !important; */
+}
+
+/* 
+
+    Type of CSS
+
+Inline
+Internal
+External
+
+*/
+
+/* ID selector */
+#titulo {
+    color: crimson;
+    text-align: center;
+}
+
+/* Class selectors */
+.center {
+    text-align: center;
+}
+
+.big-size {
+    font-size: large;
+    word-spacing: 10px;
+}
+
+/* Grouping CSS selectors with HTML elements */
+article.selected p,
+article.selected p>a,
+blockquote {
+    text-align: left;
+    color: brown;
+}
