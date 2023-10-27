@@ -1,5 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Zilla+Slab:wght@400;500;600&display=swap');
+
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(#cddbff, #aec4fb)
+}
+
+/* container styling */
+.container {
+    margin: 70px auto;
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .30);
+    overflow: hidden;
+}
+
+.container figure img {
+    width: 100%;
+    height: 350px;
+    border-radius: 17px;
+}
+
+.container h2 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    padding: 2%;
+    margin: 3%;
+}
+
+.container div p {
+    text-align: center;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+    margin: 16px 0 16px;
+    color: hsla(0, 2%, 9%, 0.5)
+}
+
+/* .container figure figcaption {
+    font-family: monospace;
+    color: darkgray;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+} */
+
+/* todo: Create the responsive part */
+
 .attribution {
-    font-size: 11px;
+    font-size: 12px;
+    font-family: 'Zilla Slab', sans-serif;
     text-align: center;
 }
 
