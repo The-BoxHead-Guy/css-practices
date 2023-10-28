@@ -23,7 +23,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [https://rb.gy/zmaly](https://rb.gy/zmaly)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Qr-Code](https://css-practices-vert.vercel.app/)
 
 ## My process
 
@@ -83,5 +83,5 @@ I want to keep focusing my efforts in learning CSS and responsive design, in ord
 
 - Website - [@Master-Aless](https://the-boxhead-guy.github.io/index.html)
 - Frontend Mentor - [The-BoxHead-Guy](https://www.frontendmentor.io/profile/The-BoxHead-Guy)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@Master_Aless](https://twitter.com/Master_Aless)
 - LinkedIN - [Jhon Alessandro V](www.linkedin.com/in/jhon-alessandro-v-110895255)
