@@ -11,13 +11,16 @@ header h1 {
 }
 .main--container {
   background-color: #251f23;
-  height: 500px;
+  max-height: 100vh;
+  max-width: 75%;
+  margin: 0 auto;
   padding: 10px;
+  border-radius: 6px;
 }
 .main--container p {
   margin: 15px 8px;
   padding: 6px;
-  border-radius: 6px;
+  border-radius: 6px 0 6px 0;
   background-color: inherit;
   transition: all 0.2s ease;
   color: rgb(88, 81, 81);
@@ -31,7 +34,7 @@ header h1 {
 }
 
 .red {
-  border: 1px solid indianred;
+  border: 2px solid indianred;
 }
 .red:hover {
   background-color: indianred;
@@ -39,6 +42,7 @@ header h1 {
 
 .pink {
   border: 1px dashed deeppink;
+  border-width: thick;
 }
 .pink:hover {
   background-color: deeppink;

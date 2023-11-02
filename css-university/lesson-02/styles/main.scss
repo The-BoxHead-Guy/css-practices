@@ -22,13 +22,16 @@ header h1 {
 
   &--container {
     background-color: $background;
-    height: 500px;
+    max-height: 100vh;
+    max-width: 75%;
+    margin: 0 auto;
     padding: 10px;
+    border-radius: 6px;
 
     p {
       margin: 15px 8px;
       padding: 6px;
-      border-radius: 6px;
+      border-radius: 6px 0 6px 0;
       background-color: inherit;
       transition: all 0.2s ease;
       color: rgb(88, 81, 81);
@@ -45,7 +48,9 @@ header h1 {
 }
 
 .red {
-  border: 1px solid $indian-red;
+  border: 2px solid $indian-red;
+  // border-width: 5px 2px 5px 1px;
+  // border-color: indianred lightcoral firebrick salmon;
 
   &:hover {
     background-color: $indian-red;
@@ -54,6 +59,7 @@ header h1 {
 
 .pink {
   border: 1px dashed $deep-pink;
+  border-width: thick; // Thin, thick, and medium
 
   &:hover {
     background-color: $deep-pink;
