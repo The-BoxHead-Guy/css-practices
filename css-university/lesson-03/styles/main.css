@@ -1,0 +1,58 @@
+/* This scope will define the defaul settings for the whole project */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.responsive-div.box-1 {
+    /* In order to set the correct lenght of the width, there must be calculated whether padding, border and margin are included */
+
+
+    max-width: 750px;
+
+    /* three essential elements that sets a box-model based element */
+    margin: 30px auto;
+    padding: 10px 5px 10px 5px;
+
+    /* Outline is a border around an element, and it doesn't affect the box-model */
+    outline: 5px solid darkred;
+    /* outline-offset: ; */
+    text-align: center;
+    background-color: salmon;
+
+    /* If it's wanted to be exact the width or height in our element, it's necessary to use box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+.responsive-div.box-2 {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 10px 5px 10px 5px;
+    border: 10px solid crimson;
+    text-align: center;
+    background-color: salmon;
+    box-sizing: border-box;
+}
+
+.div-centered {
+    max-width: 500px;
+    padding: 10px 5px 10px 5px;
+    margin: 10px auto;
+    text-align: center;
+
+    border-left: 5px solid rgb(94, 61, 28);
+    background-color: turquoise;
+}
+
+.div-centered p {
+    margin: inherit;
+    border-left: inherit;
+}
