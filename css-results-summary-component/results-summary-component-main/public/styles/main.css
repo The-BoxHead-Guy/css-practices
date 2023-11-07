@@ -1,0 +1,51 @@
+/* font-family: 'Hanken Grotesk', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+    --light-red: #ff434d;
+    --orangey-yellow: #ff9b38;
+    --green-teal: #2aa198;
+    --cobalt-blue: #268bd2;
+
+    --light-slate-blue: #a6e22e;
+    --light-royal-blue: #79b8ff;
+
+    /* Gradients */
+    --violet-blue: #7e2deb;
+    --persian-blue: #3d3deb;
+
+    /* Neutral Colors */
+    --white: #ffffff;
+    --pale-blue: #f9faff;
+    --light-lavender: #f2c1ff;
+    --dark-gray-blue: #3a3a3a;
+
+    /* Typography */
+    --font-size: 18px;
+}
+
+/* Responsive part */
+@media screen and (min-width: 375px) {
+    .result-card {
+        width: 100%;
+        height: 322px;
+        background: linear-gradient(var(--violet-blue), var(--persian-blue));
+        border-radius: 0 0 20px 20px
+    }
+}
+
+/* Attribution section */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
