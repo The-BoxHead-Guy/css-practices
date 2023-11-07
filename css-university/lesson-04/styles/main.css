@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    color: #663399;
+}
+
+[class*="container"] {
+    color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    width: 170px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+@media screen and (max-width: 670px) {
+    [class*="container"] {
+        width: 100px;
+    }
+}
+
+[class$="__red"] {
+    background-color: darkred;
+}
+
+.container.blue {
+    background-color: blueviolet;
+}
+
+.rgb {
+    background-color: rgb(250, 128, 114);
+}
+
+.rgba {
+    background-color: rgba(250, 128, 114, 0.5);
+}
+
+.hex {
+    background-color: #00fa9a;
+    color: #000;
+    /* #ff0000 is red
+       #00ff00 is green
+       #0000ff is blue
+
+    Hex color can be simplified: #ffffff -> #fff
+
+    */
+}
+
+.hex__transparent {
+    background-color: #00fa9a55;
+    color: #000;
+}
+
+.hsl {
+    background-color: hsl(187, 52%, 80%);
+    color: #000;
+}
+
+.hsla {
+    background-color: hsla(187, 52%, 80%, 0.5);
+    color: #000;
+}
