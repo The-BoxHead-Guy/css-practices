@@ -1,0 +1,59 @@
+:root {
+    /* Font colors */
+    --title-color: crimson;
+    --background-title-color: moccasin;
+    --text-shadow-color: RebeccaPurple;
+    --text-color: #f5f5f5;
+
+    /* Background colors [containers] */
+    --background-color: rgb(0, 128, 128);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    background-color: var(--background-title-color);
+    width: 400px;
+    margin: 10px auto;
+    border-radius: 10px;
+    color: var(--title-color);
+
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 4px var(--text-shadow-color);
+    /* Depending whether "text; letter; word" chosen, it's how it is going to be displayed */
+
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+
+.message {
+    background-color: var(--background-color);
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 10px 15%;
+    color: var(--text-color);
+}
+
+.container p {
+    text-align: justify;
+    text-indent: 30px;
+    text-decoration: none;
+
+    /* direction: rtl; */
+    word-spacing: 2px;
+    line-height: 1.8em;
+    white-space: normal;
+    text-shadow: .5px 0px 1px var(--background-title-color);
+}
