@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    /* Background attributes */
+    /*
+
+    background-color: #C67282;
+    background-image: url("https://wallpaper.dog/large/20529664.jpg");
+    background-repeat: no-repeat;
+    background-position: right top; 
+
+    */
+
+    /* Simplify background values by using one attribute */
+    background: #C67282 url(/img/background-img.jpg) no-repeat right top;
+    background-attachment: fixed;
+
+    color: cornsilk;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    background-color: #C67282;
+    max-width: 100%;
+}
