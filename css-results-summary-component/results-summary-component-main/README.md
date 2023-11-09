@@ -43,6 +43,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+### Discovering Figma and conventional hand-paper methods of wireframes
+
+The first thing I discovered is that in order to make the layout for the website, I needed at least the skeleton because I didn't know how to start.
+
+So, with a *world-class* incredibly short learning of **Figma** and how to use:
+
+- Frames
+- Constraints
+
+I could develop what I called *The non-exact but nice skeleton*, so I had in my mind the way to start this project effectively/
+
+### Using AI copilot to make things faster
+
+Using AI as a your copilot while you're developing a solution it's excellent when there's repetitive things that must be done.
+
+With only a command, and creativity, I set almost all the environment on the project, only to focus in its development
+
 ### Built with
 
 - Semantic HTML5 markup
