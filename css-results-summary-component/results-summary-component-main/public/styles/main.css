@@ -10,9 +10,13 @@
 :root {
     /* Primary Colors */
     --light-red: #ff434d;
+    --background-light-red: rgba(255, 66, 76, 0.125);
     --orangey-yellow: #ff9b38;
+    --background-orangey-yellow: rgba(255, 155, 56, 0.125);
     --green-teal: #2aa198;
+    --background-green-teal: rgba(42, 161, 152, 0.125);
     --cobalt-blue: #268bd2;
+    --background-cobalt-blue: rgba(38, 139, 210, 0.125);
     --bright-yellow: #f1fa8c;
     --background-light: #f9ffa955;
     --buttom-color: #3D3969;
@@ -22,7 +26,7 @@
     --light-royal-blue: #79b8ff;
 
     /* Gradients */
-    --violet-blue: #6921c7d0;
+    --violet-blue: #2124c7d0;
     --persian-blue: #0000f9ce;
 
     /* Neutral Colors */
@@ -33,11 +37,11 @@
     --light-gray: #ABA0A0;
 
     /* Typography */
-    --font-size-titles: 18px;
+    --font-size-titles: 12px;
 }
 
 /* Responsive part */
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 480px) {
     .container {
         height: 100vh;
     }
@@ -86,21 +90,31 @@
 
     /* 2nd section */
     div.result-card__message h2 {
-        color: var(--bright-yellow);
+        color: var(--white);
     }
 
     div.result-card__message p {
         color: var(--light-gray);
-        font-size: 14;
+        font-size: 12;
+        text-align: center;
+    }
+
+    .score-title {
+        display: flex;
+        height: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 10%;
     }
 
     .score {
         display: flex;
-        height: 50%;
+        height: 40%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        gap: 10px;
+
     }
 
     .score-card figure,
@@ -111,8 +125,7 @@
     }
 
     .score h2 {
-        font-size: var(--font-size-titles);
-        margin: 0 250px 0 0;
+        font-size: 20px;
     }
 
     .score-card {
@@ -124,22 +137,32 @@
         margin: 10px 0;
     }
 
-    
+    /* todo: Check the main design and change the colors [Backgrounds] */
     .score-card.reaction {
-        background-color: var(--background-light);
+        background-color: var(--background-light-red);
         color: var(--light-red);
     }
 
+    .score-card.reaction p>span,
+    .score-card.memory p>span,
+    .score-card.verbal p>span,
+    .score-card.visual p>span {
+        font-weight: bold;
+    }
+
     .score-card.memory {
-        background-color: var(--background-light);
+        background-color: var(--background-orangey-yellow);
+        color: var(--orangey-yellow);
     }
 
     .score-card.verbal {
-        background-color: var(--pale-blue);
+        background-color: var(--background-green-teal);
+        color: var(--green-teal);
     }
 
     .score-card.visual {
-        background-color: var(--pale-blue);
+        background-color: var(--background-cobalt-blue);
+        color: var(--cobalt-blue);
     }
 
     .score-card figure img {
