@@ -12,7 +12,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -22,28 +21,27 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 Users should be able to:
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
+- Adapt to several screen sizes, feel welcome to experiment by using dev tools
+- Observer that only the button has a **hover** effect by changing the color
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Desktop part
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Desktop-part](./assets/screenshots/desktop-part.jpeg)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+#### Responsive-part
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Responsive-part](./assets/screenshots/responsive-part.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [css-results-summary-component](https://github.com/The-BoxHead-Guy/css-practices/tree/main/css-results-summary-component/results-summary-component-main)
+- Live Site URL: [results summary component](https://results-summary-component-orcin-beta.vercel.app/)
 
-## My process
+### My process
 
-### Discovering Figma and conventional hand-paper methods of wireframes
+#### Discovering Figma and conventional hand-paper methods of wireframes
 
 The first thing I discovered is that in order to make the layout for the website, I needed at least the skeleton because I didn't know how to start.
 
@@ -54,62 +52,58 @@ So, with a *world-class* incredibly short learning of **Figma** and how to use:
 
 I could develop what I called *The non-exact but nice skeleton*, so I had in my mind the way to start this project effectively/
 
-### Using AI copilot to make things faster
+#### Short conclusion
+
+The key to get this work done was the mindset of not giving up until it worked out.
+
+There were many difficulties along the way, starting with the challenge of using flex-box without knowing about. Creativity and imagination plays an important role here.
+
+Breaking the code can also help, it allows you how to figure out the best approach to solve a problem.
+
+#### Box-model
+
+One of the things that were incredibly difficult was reminding me of that each single **HTML** element it's a box, or at least, it's treated as a box that contains data, attributes, and states.
+
+For example, in several cases, I forgot to put the *width* or *height* of the **div** element, and then having troubles by finding out why weren't the other elements behaving as I'd wanted to.
+
+#### Using AI copilot to make things faster
 
 Using AI as a your copilot while you're developing a solution it's excellent when there's repetitive things that must be done.
 
 With only a command, and creativity, I set almost all the environment on the project, only to focus in its development
 
+#### Shorten the code
+
+I discover that when you use CSS, you can **re-use** code for other areas of the application.
+
+That's great because it saves time, headaches, and it makes the project way more scalable.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS responsive design (Media queries)
+- Figma (Using frames and constraints)
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Codeium (copilot assistant)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+What I learned the most was about being resilient throughout the entire building on the project.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+It's pointless if there's isn't at least a small approach about how the solution is going to be developped
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+The next technique I would learn pretty well would be box-model, and flex-box, as well as understanding how to design a component or a simple website.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [masteraless.online](masteraless.online)
+- Frontend Mentor - [@masteraless](https://www.frontendmentor.io/profile/The-BoxHead-Guy)
+- Twitter - [@master_aless](https://twitter.com/Master_Aless)
+- LinkedIN - [Jhon Alessandro V](www.linkedin.com/in/jhon-alessandro-v-110895255)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I'd like to give a great thanks to dear friend **Francisco** who was behind all the process and he was pushing me to continue to do it despite of the difficulties.
