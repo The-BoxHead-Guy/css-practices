@@ -65,30 +65,32 @@ div.z-index {
 
 .flex-parent {
   display: flex;
-  flex-flow: row nowrap;
-  width: 200px;
-  border: 2px solid #000; }
+  flex-flow: row wrap;
+  width: 300px;
+  height: 400px;
+  border: 2px solid #000;
+  justify-content: center;
+  /* Main axis */
+  align-content: flex-end;
+  align-items: center;
+  gap: 1em; }
 
 .item {
   border: 1px solid #123;
   opacity: 0.9;
   width: 50px;
-  height: 150px;
-  background: #09f;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1; }
+  height: 50px;
+  background: #09f; }
 
 .item:first-child {
   background: yellow;
-  flex: 1; }
+  height: 25px; }
 
 .item:nth-child(2) {
   background: red;
-  flex: 2; }
+  height: 35px; }
 
 .item:last-child {
-  background: blue;
-  flex: 1; }
+  background: blue; }
 
 /*# sourceMappingURL=main.css.map */
