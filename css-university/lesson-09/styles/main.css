@@ -1,0 +1,26 @@
+h1,
+div,
+p {
+  border: 1px solid cornflowerblue;
+  text-align: center;
+  display: block;
+  padding: 10px; }
+
+h1 {
+  display: none; }
+
+span {
+  display: inline;
+  border: 1px solid red;
+  padding: 2px; }
+
+a {
+  display: block;
+  border: 1px solid turquoise; }
+
+ul {
+  display: inline-block; }
+  ul li {
+    display: inline; }
+
+/*# sourceMappingURL=main.css.map */

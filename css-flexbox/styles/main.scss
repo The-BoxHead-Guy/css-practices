@@ -1,0 +1,129 @@
+body {
+  background: lightblue;
+  margin: 0;
+}
+
+.container {
+  width: 150px;
+  height: 250px;
+  padding: 10px;
+  background: white;
+  font-size: 48px;
+
+  //   Box model
+  box-sizing: border-box;
+
+  /* Overflowing */
+  overflow: hidden; // Recommended if they are needed.
+
+  /* How to treat overflow when i t's about text */
+  text-overflow: ellipsis;
+}
+
+// Positioning
+.parent {
+  border: 5px solid #000;
+  width: 250px;
+  height: 500px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+
+  /* Set a reference position for children elements
+  
+  if it's not set, the children elements will take the document as a reference
+  
+  */
+  position: relative;
+}
+
+.container-div {
+  background: #09f;
+  width: 100px;
+  height: 100px;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  /* absolute position allows you to set the coordinates of the element in the document */
+
+  // How to center a div using positioning?
+  //* inset: 0; Top, right, bottom, left set to 0. and margin: 0 auto; centers it.
+}
+
+.z-index-parent {
+  border: 5px solid #000;
+  width: 250px;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+div.z-index {
+  width: 200px;
+  height: 200px;
+  margin-top: -33px;
+  position: relative;
+  color: #fff;
+  padding: 5px 0 0 5px;
+}
+
+.z-index:first-child {
+  background: #123;
+  z-index: 1;
+  /* z-index is the order of the element in the document. It's the order in which the element will be displayed. */
+}
+
+.z-index:nth-child(2) {
+  background: #456;
+  z-index: 4;
+}
+
+.z-index:last-child {
+  background: #789;
+  z-index: 3;
+}
+
+// Flex-box
+
+.flex-parent {
+  display: flex;
+  flex-flow: row wrap; // flex-direction: row; flex-wrap: wrap;
+  width: 300px;
+  height: 400px;
+  border: 2px solid #000;
+  justify-content: center; /* Main axis */
+  align-content: flex-end;
+  align-items: center;
+  gap: 1em;
+}
+
+.item {
+  border: 1px solid #123;
+  opacity: 0.9;
+  width: 50px;
+  height: 50px;
+
+  background: #09f;
+
+  // flex: 1; by default
+}
+
+.item:first-child {
+  background: yellow;
+  height: 25px;
+  //   flex: 1;
+  //   order: 3;
+}
+
+.item:nth-child(2) {
+  background: red;
+  height: 35px;
+  //   flex: 2;
+  //   order: 2;
+}
+
+.item:last-child {
+  background: blue;
+  //   flex: 1;
+  //   order: 1;
+}
