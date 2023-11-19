@@ -31,8 +31,7 @@ section.parent {
   width: 100px;
   height: 100px;
   /* absolute position allows you to set the coordinates of the element in the document */
-  position: absolute;
-  top: 0;
-  left: 0; }
+  position: fixed;
+  margin: auto; }
 
 /*# sourceMappingURL=main.css.map */

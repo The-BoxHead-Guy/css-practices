@@ -41,7 +41,9 @@ section.parent {
   height: 100px;
 
   /* absolute position allows you to set the coordinates of the element in the document */
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+
+  // How to center a div using positioning?
+  //* inset: 0; Top, right, bottom, left set to 0.
+  margin: auto;
 }
