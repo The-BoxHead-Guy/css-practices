@@ -17,8 +17,9 @@ body {
 .parent {
   border: 5px solid #000;
   width: 250px;
-  height: 550px;
+  height: 500px;
   box-sizing: border-box;
+  margin-bottom: 50px;
   /* Set a reference position for children elements
   
   if it's not set, the children elements will take the document as a reference
@@ -34,5 +35,32 @@ body {
   top: 0;
   left: 0;
   /* absolute position allows you to set the coordinates of the element in the document */ }
+
+.z-index-parent {
+  border: 5px solid #000;
+  width: 250px;
+  height: 500px;
+  box-sizing: border-box; }
+
+div.z-index {
+  width: 200px;
+  height: 200px;
+  margin-top: -33px;
+  position: relative;
+  color: #fff;
+  padding: 5px 0 0 5px; }
+
+.z-index:first-child {
+  background: #123;
+  z-index: 1;
+  /* z-index is the order of the element in the document. It's the order in which the element will be displayed. */ }
+
+.z-index:nth-child(2) {
+  background: #456;
+  z-index: 4; }
+
+.z-index:last-child {
+  background: #789;
+  z-index: 3; }
 
 /*# sourceMappingURL=main.css.map */
