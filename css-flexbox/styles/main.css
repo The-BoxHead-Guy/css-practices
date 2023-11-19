@@ -4,12 +4,14 @@ body {
 
 .container {
   width: 150px;
-  height: 150px;
+  height: 250px;
   padding: 10px;
   background: white;
   font-size: 48px;
   box-sizing: border-box;
   /* Overflowing */
-  overflow: auto; }
+  overflow: hidden;
+  /* How to treat overflow when i t's about text */
+  text-overflow: ellipsis; }
 
 /*# sourceMappingURL=main.css.map */

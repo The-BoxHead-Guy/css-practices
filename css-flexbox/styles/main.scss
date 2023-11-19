@@ -5,7 +5,7 @@ body {
 
 .container {
   width: 150px;
-  height: 150px;
+  height: 250px;
   padding: 10px;
   background: white;
   font-size: 48px;
@@ -14,5 +14,8 @@ body {
   box-sizing: border-box;
 
   /* Overflowing */
-  overflow: auto; // Recommended if they are needed.
+  overflow: hidden; // Recommended if they are needed.
+
+  /* How to treat overflow when i t's about text */
+  text-overflow: ellipsis;
 }
