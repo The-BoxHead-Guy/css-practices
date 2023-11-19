@@ -1,0 +1,14 @@
+body {
+  background: lightblue;
+  margin: 0;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: white;
+
+  //   Box model
+  box-sizing: border-box;
+}

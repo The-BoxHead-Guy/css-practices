@@ -1,0 +1,12 @@
+body {
+  background: lightblue;
+  margin: 0; }
+
+.container {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: white;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=main.css.map */
