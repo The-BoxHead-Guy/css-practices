@@ -63,4 +63,32 @@ div.z-index {
   background: #789;
   z-index: 3; }
 
+.flex-parent {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 200px;
+  border: 2px solid #000; }
+
+.item {
+  border: 1px solid #123;
+  opacity: 0.9;
+  width: 50px;
+  height: 150px;
+  background: #09f;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1; }
+
+.item:first-child {
+  background: yellow;
+  flex: 1; }
+
+.item:nth-child(2) {
+  background: red;
+  flex: 2; }
+
+.item:last-child {
+  background: blue;
+  flex: 1; }
+
 /*# sourceMappingURL=main.css.map */
