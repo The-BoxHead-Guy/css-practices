@@ -4,11 +4,15 @@ body {
 }
 
 .container {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   padding: 10px;
   background: white;
+  font-size: 48px;
 
   //   Box model
   box-sizing: border-box;
+
+  /* Overflowing */
+  overflow: auto; // Recommended if they are needed.
 }
