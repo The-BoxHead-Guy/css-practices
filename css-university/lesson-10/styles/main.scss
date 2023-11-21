@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+div.container {
+  width: 50%;
+  //? max-width can also be used
+
+  border: 2px solid cornflowerblue;
+  margin: auto;
+
+  //? position: static; // default
+
+  /* Static position is the default configuration for an element, it doens't allows the developer to set its dimentions: top, left, right, bottom. */
+
+  position: static;
+
+  /* Relative position allows the developer to set its dimentions: top, left, right, bottom 
+  
+  If there are other elements around, they wont't be affected, unless they are inside the relative element.
+  
+  */
+
+  position: relative;
+}
+
+div.fixed {
+  /* Fixed position takes all the viewport space and allows the developer to set its dimentions: top, left, right, bottom from the viewport */
+  position: fixed;
+  bottom: 0;
+  left: 12.5%;
+  right: 12.5%;
+}
+
+// Sticky position
+
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 0.5em;
+  background-color: hsl(336, 100%, 30%);
+  z-index: 2;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    color: white;
+  }
+}
+
+div.box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+}
+
+div.relative {
+  position: relative;
+  display: flex;
+  height: 200px;
+  border: 3px hotpink solid;
+  flex-basis: calc(1em * 15);
+  z-index: 1;
+
+  p {
+    margin-left: 1em;
+  }
+
+  & .absolute {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.img-container {
+  width: 30%;
+  border: 2px dashed hotpink;
+  position: relative;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+img.image {
+  width: 100%;
+  opacity: 0.25;
+}
+
+.centered {
+  position: absolute;
+}
+
+.overflow {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+
+  border: 2px solid red;
+
+  // The property is given to the parent element.
+  overflow: auto;
+
+  width: 100%;
+  height: 200px;
+
+  &__item {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.float {
+  width: 100%;
+  height: 200px;
+  border: 2px red solid;
+
+  position: relative;
+
+  &__item {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    float: left;
+    border: 2px solid cornflowerblue;
+
+    position: relative;
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      /*
+      ? Using flex-box for centering the text
+      
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      
+      */
+    }
+
+    &.left {
+      float: left;
+    }
+
+    &.right {
+      float: right;
+    }
+
+    &.center {
+      clear: both;
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}
+
+.inl-bck {
+  border: 2px solid red;
+  padding: 10px;
+  margin: 0 auto;
+
+  width: 80%;
+  height: 10%;
+  overflow: auto;
+
+  &__text {
+    border: 2px solid cornflowerblue;
+    height: 50px;
+    display: inline-block;
+
+    font-weight: bold;
+    font-style: italic;
+    background-color: lightblue;
+
+    padding: 0.5em;
+  }
+}
+
+.inl-block-menu {
+  text-align: center;
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+
+    li {
+      display: inline-block;
+      padding: 1em;
+      margin: 0 0.5em;
+      background-color: purple;
+      border-radius: 0.5em;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: yellow;
+        }
+      }
+    }
+  }
+}
