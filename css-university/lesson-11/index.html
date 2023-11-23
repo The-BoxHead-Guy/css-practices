@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Combined Selectors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Combined Selectors</h1>
+    </header>
+    <div class="container descendant">
+      <h2>Descendants selectors (Any internal level)</h2>
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+      <section>
+        <p>Third paragraph</p>
+      </section>
+    </div>
+    <div class="container child">
+      <h2>Children selectors (Any internal level)</h2>
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+      <section>
+        <p>Third paragraph</p>
+      </section>
+
+      <!-- No matter how many other tags are in the same level, the paragraph tag will be selected if it's used the desencendant selector -->
+      <div class="container descendant">
+        <section>
+          <div>
+            <p>Fourth paragraph</p>
+          </div>
+        </section>
+      </div>
+
+      <p>Fifth paragraph</p>
+    </div>
+
+    <!-- Sibling -->
+    <section class="adjacent">
+      <div class="container sibling">
+        <h2>Sibling selectors (Any internal level)</h2>
+        <p>First paragraph</p>
+      </div>
+      <p id="second">Second paragraph</p>
+      <p>Third paragraph</p>
+    </section>
+
+    <!-- Pseudo Class -->
+    <section class="pseudo">
+      <div class="container hidden">
+        <h2>Hover this text</h2>
+        <p>I'm here! I was hidden</p>
+        <p>You found me!</p>
+      </div>
+      <div class="container first">
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+      </div>
+    </section>
+  </body>
+</html>
