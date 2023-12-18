@@ -16,6 +16,12 @@ nav {
   padding: 20px 0;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 nav li {
   color: #fff;
   font-family: "Raleway", sans-serif;
