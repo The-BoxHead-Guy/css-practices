@@ -1,4 +1,5 @@
 @import "colors";
+@import "mixins";
 
 body {
   background-color: $background;
@@ -7,13 +8,10 @@ body {
 }
 
 header {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
+  @include containerBox;
 
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 
   & .title-container {
     width: 40%;
@@ -46,4 +44,54 @@ header {
       }
     }
   }
+}
+
+main {
+  width: 100%;
+
+  & .container {
+    @include containerBox;
+    margin: 1em 0;
+
+    & .subtitle {
+      width: 40%;
+      text-align: center;
+      font: {
+        size: 32px;
+        family: sans-serif;
+      }
+    }
+
+    & .content {
+      width: 60%;
+
+      & h3 {
+        background-color: $secondary-transparent;
+        padding: 1em;
+        border: 2px solid $stroke;
+        border-radius: 2px;
+        color: $paragraph-dark;
+        margin-bottom: 1em;
+        text-align: center;
+        margin: 0 10em 2em;
+
+        font: {
+          size: 18px;
+          family: "Gugi", monospace;
+        }
+      }
+    }
+  }
+}
+
+hr {
+  border: 1px dashed $stroke;
+}
+
+.html {
+  color: $html;
+}
+
+.css {
+  color: $css-lighter;
 }
