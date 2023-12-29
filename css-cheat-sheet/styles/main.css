@@ -1,0 +1,32 @@
+body {
+  background-color: #55423d;
+  color: #fff3ec;
+  margin: 5% 10%; }
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em; }
+  header .title-container {
+    width: 40%; }
+    header .title-container h1.title {
+      color: #ffe;
+      font-size: 64px;
+      font-family: "Gugi", monospace;
+      font-weight: 400;
+      text-align: left;
+      text-shadow: 1px -1px 0px #140d0d; }
+  header .tech {
+    width: 60%; }
+    header .tech ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      gap: 0.75em; }
+      header .tech ul li img {
+        width: 64px; }
+
+/*# sourceMappingURL=main.css.map */

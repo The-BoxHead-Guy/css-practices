@@ -1,0 +1,49 @@
+@import "colors";
+
+body {
+  background-color: $background;
+  color: $paragraph;
+  margin: 5% 10%;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 1em;
+
+  & .title-container {
+    width: 40%;
+
+    & h1.title {
+      color: $headline;
+      font: {
+        size: 64px;
+        family: "Gugi", monospace;
+        weight: 400;
+      }
+      text-align: left;
+      text-shadow: 1px -1px 0px $stroke;
+    }
+  }
+
+  & .tech {
+    width: 60%;
+
+    & ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      gap: 0.75em;
+
+      & li {
+        & img {
+          width: 64px;
+        }
+      }
+    }
+  }
+}
