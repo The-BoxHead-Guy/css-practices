@@ -5,6 +5,7 @@ body {
   background-color: $background;
   color: $paragraph;
   margin: 5% 10%;
+  font-family: "open sans", sans-serif;
 }
 
 header {
@@ -56,6 +57,11 @@ main {
     & .subtitle {
       width: 40%;
       text-align: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
       font: {
         size: 32px;
         family: sans-serif;
@@ -64,6 +70,7 @@ main {
 
     & .content {
       width: 60%;
+      margin: 1em 0 1em;
 
       & h3 {
         background-color: $secondary-transparent;
@@ -71,9 +78,8 @@ main {
         border: 2px solid $stroke;
         border-radius: 2px;
         color: $paragraph-dark;
-        margin-bottom: 1em;
         text-align: center;
-        margin: 0 10em 2em;
+        margin: 2em 10em 2em;
 
         font: {
           size: 18px;
@@ -84,14 +90,77 @@ main {
   }
 }
 
+// Table styles
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $stroke;
+  border-radius: 2px;
+
+  & thead {
+    background-color: $background-lighter;
+
+    & th {
+      border: 1px solid $stroke;
+      padding: 1em;
+      text-align: center;
+      font: {
+        size: 18px;
+        family: "Gugi", monospace;
+        weight: 500;
+      }
+    }
+  }
+
+  & tbody {
+    & tr {
+      height: 4em;
+      position: relative;
+
+      & td {
+        border: 1px solid $stroke;
+        padding: 0.75em;
+        vertical-align: center;
+      }
+
+      & td:nth-child(1) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.html-subtitle {
+  @include subtitle($html);
+}
+
+.css-subtitle {
+  @include subtitle($css);
+}
+
+.html {
+  strong {
+    font-weight: 700;
+    color: $html-stronger;
+  }
+}
+
 hr {
   border: 1px dashed $stroke;
 }
 
-.html {
-  color: $html;
-}
-
 .css {
   color: $css-lighter;
+}
+
+article {
+  text: {
+    align: left;
+    indent: 1em;
+  }
+  margin-bottom: 2em;
+}
+
+p {
+  line-height: 1.7;
 }

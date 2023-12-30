@@ -4,3 +4,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin subtitle($color) {
+  color: $color;
+  padding: 80% 0;
+  margin: 0 2em;
+  border-radius: 2px;
+  border: 2px dashed $color;
+  width: 70%;
+}

@@ -1,7 +1,8 @@
 body {
-  background-color: #55423d;
+  background-color: #56433e;
   color: #fff3ec;
-  margin: 5% 10%; }
+  margin: 5% 10%;
+  font-family: "open sans", sans-serif; }
 
 header {
   display: flex;
@@ -40,29 +41,82 @@ main {
     main .container .subtitle {
       width: 40%;
       text-align: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
       font-size: 32px;
       font-family: sans-serif; }
     main .container .content {
-      width: 60%; }
+      width: 60%;
+      margin: 1em 0 1em; }
       main .container .content h3 {
         background-color: rgba(255, 192, 173, 0.75);
         padding: 1em;
         border: 2px solid #140d0d;
         border-radius: 2px;
         color: #140d0d;
-        margin-bottom: 1em;
         text-align: center;
-        margin: 0 10em 2em;
+        margin: 2em 10em 2em;
         font-size: 18px;
         font-family: "Gugi", monospace; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #140d0d;
+  border-radius: 2px; }
+  table thead {
+    background-color: #3b2e2b; }
+    table thead th {
+      border: 1px solid #140d0d;
+      padding: 1em;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Gugi", monospace;
+      font-weight: 500; }
+  table tbody tr {
+    height: 4em;
+    position: relative; }
+    table tbody tr td {
+      border: 1px solid #140d0d;
+      padding: 0.75em;
+      vertical-align: center; }
+    table tbody tr td:nth-child(1) {
+      text-align: center; }
+
+.html-subtitle {
+  color: #ff5f35;
+  padding: 80% 0;
+  margin: 0 2em;
+  border-radius: 2px;
+  border: 2px dashed #ff5f35;
+  width: 70%; }
+
+.css-subtitle {
+  color: #254bdd;
+  padding: 80% 0;
+  margin: 0 2em;
+  border-radius: 2px;
+  border: 2px dashed #254bdd;
+  width: 70%; }
+
+.html strong {
+  font-weight: 700;
+  color: #ff9b73; }
 
 hr {
   border: 1px dashed #140d0d; }
 
-.html {
-  color: #ff5f35; }
-
 .css {
   color: #6f8dff; }
+
+article {
+  text-align: left;
+  text-indent: 1em;
+  margin-bottom: 2em; }
+
+p {
+  line-height: 1.7; }
 
 /*# sourceMappingURL=main.css.map */
