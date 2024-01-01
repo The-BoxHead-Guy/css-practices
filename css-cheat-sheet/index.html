@@ -42,7 +42,8 @@
           <article>
             <p>
               Semantic HTML means to use <strong>meaningful</strong> tags to
-              describe a part or section of the web page,
+              describe a part or section of the web page, allowing the
+              improvement of SEO, accesibility and code clarity,
               <strong>for example:</strong>
             </p>
           </article>
@@ -57,42 +58,109 @@
               <tr>
                 <td><code>&lt;header&gt;</code></td>
                 <td>
-                  Defines the header section of the page where there is usually
-                  the <strong>title, logo, and navigation</strong>
+                  Defines the <strong>introductory content</strong> of a section
+                  or page
                 </td>
               </tr>
               <tr>
                 <td><code>&lt;nav&gt;</code></td>
-                <td>Defines the navigation section</td>
+                <td>Defines a set of navigation links</td>
               </tr>
               <tr>
                 <td><code>&lt;main&gt;</code></td>
-                <td>Defines the main content</td>
+                <td>Contains the central content of a document</td>
               </tr>
               <tr>
                 <td><code>&lt;aside&gt;</code></td>
-                <td>Defines an aside</td>
+                <td>
+                  Represents content that is related to the information around
+                  it
+                </td>
               </tr>
               <tr>
                 <td><code>&lt;footer&gt;</code></td>
-                <td>Defines the footer</td>
+                <td>Defines a <strong>footer</strong> of a section or page</td>
               </tr>
               <tr>
                 <td><code>&lt;figure&gt;</code></td>
-                <td>Defines a figure</td>
+                <td>
+                  Encapsulates <strong>media</strong> content, typically with a
+                  caption (&lt;figcaption&gt;)
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;article&gt;</code></td>
+                <td>
+                  Represents a self-contained piece of content that could be
+                  distributed and reused independently
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;section&gt;</code></td>
+                <td>Defines a <strong>section</strong> in a document</td>
               </tr>
             </tbody>
           </table>
+          <div class="semantic__box">
+            <h4>Example</h4>
+            <div class="header border">&lt;header&gt;</div>
+            <div class="nav border">&lt;nav&gt;</div>
+            <div class="box-1">
+              <div class="aside border"><p>&lt;aside&gt;</p></div>
+              <div class="main border">
+                &lt;main&gt;
+                <div class="article border">&lt;article&gt;</div>
+                <div class="article border">&lt;article&gt;</div>
+                <div class="article border">&lt;article&gt;</div>
+              </div>
+            </div>
+            <div class="footer border">&lt;footer&gt;</div>
+          </div>
 
           <h3>Tables</h3>
           <article>
             <p>
-              Tables are used to organize and display data in
+              Tables are used to organize and display data in a structured form
+              by using
               <strong>rows</strong> and <strong>columns</strong>. Let's comprobe
               the essential tags to make a table:
             </p>
           </article>
           <!-- todo: add table, and display all the essential tags -->
+          <table>
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&lt;table&gt;</td>
+                <td>The tag that creates a <strong>table</strong></td>
+              </tr>
+              <tr>
+                <td>&lt;tr&gt;</td>
+                <td>
+                  Creates a table <strong>row</strong> where the cells are
+                  contained
+                </td>
+              </tr>
+              <tr>
+                <td>&lt;td&gt;</td>
+                <td>
+                  Table <strong>Data</strong>, which is the content of the table
+                </td>
+              </tr>
+              <tr>
+                <td>&lt;th&gt;</td>
+                <td>
+                  Defines the headers of a table, a good way to classify the
+                  data
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
           <!-- Useful tags -->
           <h3>Useful tags</h3>
