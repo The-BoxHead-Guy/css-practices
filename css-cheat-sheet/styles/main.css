@@ -146,6 +146,13 @@ table {
     table tbody tr td:nth-child(1) {
       text-align: center; }
 
+tfoot#table-reference tr td {
+  border: 1px solid transparent;
+  border-radius: 0 0 1em 1em;
+  background-color: rgba(59, 46, 43, 0.5);
+  padding: 1.25em 0;
+  text-align: center; }
+
 .html-subtitle {
   color: #ff5f35;
   padding: 80% 0;

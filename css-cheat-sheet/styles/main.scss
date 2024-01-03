@@ -215,6 +215,18 @@ table {
   }
 }
 
+tfoot#table-reference {
+  & tr {
+    & td {
+      border: 1px solid transparent;
+      border-radius: 0 0 1em 1em;
+      background-color: $background-super-lighter;
+      padding: 1.25em 0;
+      text-align: center;
+    }
+  }
+}
+
 .html-subtitle {
   @include subtitle($html);
 }
