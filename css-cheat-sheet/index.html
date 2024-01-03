@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gugi&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gugi&family=Open+Sans&family=Space+Mono:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <title>Cheatsheet | HTML & CSS</title>
@@ -160,7 +160,7 @@
                 </td>
               </tr>
             </tbody>
-            <tfoot id="table-reference">
+            <tfoot class="table-reference">
               <tr>
                 <td colspan="2">
                   The <strong>table</strong> above serves as a good example 😉
@@ -170,7 +170,70 @@
           </table>
 
           <!-- Useful tags -->
-          <h3>Useful tags</h3>
+          <h3>Heading tags</h3>
+          <article>
+            <p>
+              A good website must contain a good <strong>title</strong>, but
+              that's just not enough, it needs a good <strong>looking</strong>,
+              in addition, it also needs <strong>meaning</strong> so search
+              engines can detect which title has the most relevance. That's
+              where <mark>headings</mark> come in.
+            </p>
+          </article>
+          <table>
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Example</th>
+                <th>Relevance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="centered">&lt;h1&gt;</td>
+                <td class="centered"><h1>Hello World</h1></td>
+                <td class="centered r1">Very High</td>
+              </tr>
+              <tr>
+                <td class="centered">&lt;h2&gt;</td>
+                <td class="centered"><h2>Hello World</h2></td>
+                <td class="centered r2">High</td>
+              </tr>
+              <tr>
+                <td class="centered">&lt;h3&gt;</td>
+                <td class="centered"><h3 id="exception">Hello World</h3></td>
+                <td class="centered r3">Medium</td>
+              </tr>
+              <tr>
+                <td class="centered">&lt;h4&gt;</td>
+                <td class="centered"><h4>Hello World</h4></td>
+                <td class="centered r4">Low</td>
+              </tr>
+              <tr>
+                <td class="centered">&lt;h5&gt;</td>
+                <td class="centered"><h5>Hello World</h5></td>
+                <td class="centered r5">Very Low</td>
+              </tr>
+              <tr>
+                <td class="centered">&lt;h6&gt;</td>
+                <td class="centered"><h6>Hello World</h6></td>
+                <td class="centered r6">Really Low</td>
+              </tr>
+            </tbody>
+            <tfoot class="table-reference">
+              <tr>
+                <td colspan="3">
+                  Reference:
+                  <a
+                    href="https://boosted.orange.com/docs/4.6/content/typography/#headings"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Typography, Boosted v4.6 (Docs)</a
+                  >
+                </td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </div>
       <hr />

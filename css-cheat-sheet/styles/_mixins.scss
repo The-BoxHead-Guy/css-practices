@@ -20,3 +20,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin heading-style($size, $weight) {
+  font: {
+    size: $size;
+    family: "Gugi", monospace;
+    weight: $weight;
+  }
+}

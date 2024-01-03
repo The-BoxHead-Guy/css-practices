@@ -14,10 +14,10 @@ header {
   header .title-container {
     width: 40%; }
     header .title-container h1.title {
-      color: #ffe;
       font-size: 64px;
       font-family: "Gugi", monospace;
       font-weight: 400;
+      color: #ffe;
       text-align: left;
       text-shadow: 1px -1px 0px #140d0d; }
   header .tech {
@@ -144,14 +144,83 @@ table {
       padding: 0.75em;
       vertical-align: middle; }
     table tbody tr td:nth-child(1) {
-      text-align: center; }
+      text-align: center;
+      font-family: "space mono", monospace; }
+    table tbody tr td:nth-child(3) {
+      font-family: "space mono", monospace;
+      font-weight: bold; }
 
-tfoot#table-reference tr td {
+.r1 {
+  color: #33ff44; }
+
+.r2 {
+  color: #77ff33; }
+
+.r3 {
+  color: #ccff33; }
+
+.r4 {
+  color: #ffdd33; }
+
+.r5 {
+  color: #ff8833; }
+
+.r6 {
+  color: #ff3333; }
+
+tbody > tr > td.centered {
+  text-align: center; }
+
+tbody > tr > td h1 {
+  font-size: 2.125rem;
+  font-family: "Gugi", monospace;
+  font-weight: 400; }
+tbody > tr > td h2 {
+  font-size: 1.875rem;
+  font-family: "Gugi", monospace;
+  font-weight: 400; }
+tbody > tr > td h3#exception {
+  font-size: 1.5rem;
+  font-family: "Gugi", monospace;
+  font-weight: 400;
+  margin: 0;
+  background-color: transparent;
+  color: #fff3ec;
+  border: none;
+  border-radius: unset;
+  padding: 0; }
+tbody > tr > td h4 {
+  font-size: 1.25rem;
+  font-family: "Gugi", monospace;
+  font-weight: 400; }
+tbody > tr > td h5 {
+  font-size: 1.125rem;
+  font-family: "Gugi", monospace;
+  font-weight: 400; }
+tbody > tr > td h6 {
+  font-size: 1rem;
+  font-family: "Gugi", monospace;
+  font-weight: 400; }
+
+tfoot.table-reference tr td {
   border: 1px solid transparent;
   border-radius: 0 0 1em 1em;
   background-color: rgba(59, 46, 43, 0.5);
   padding: 1.25em 0;
   text-align: center; }
+
+tfoot.table-reference a {
+  color: #f7987f;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; }
+  tfoot.table-reference a:visited {
+    color: #f7987f;
+    text-decoration: underline; }
+  tfoot.table-reference a:hover {
+    color: #ff5f35;
+    text-shadow: 1px 1px 1px #2c2320; }
+  tfoot.table-reference a:active {
+    color: #fff3ec; }
 
 .html-subtitle {
   color: #ff5f35;
@@ -172,6 +241,12 @@ tfoot#table-reference tr td {
 .html strong {
   font-weight: 700;
   color: #ff9b73; }
+.html mark {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 200;
+  background-color: rgba(59, 46, 43, 0.5);
+  padding: 0 0.35em;
+  border-radius: 0.5em; }
 
 hr {
   border: 1px dashed #140d0d; }

@@ -18,12 +18,8 @@ header {
     width: 40%;
 
     & h1.title {
+      @include heading-style(64px, 400);
       color: $headline;
-      font: {
-        size: 64px;
-        family: "Gugi", monospace;
-        weight: 400;
-      }
       text-align: left;
       text-shadow: 1px -1px 0px $stroke;
     }
@@ -210,12 +206,77 @@ table {
 
       & td:nth-child(1) {
         text-align: center;
+        font-family: "space mono", monospace;
+      }
+
+      & td:nth-child(3) {
+        font-family: "space mono", monospace;
+        font-weight: bold;
       }
     }
   }
 }
 
-tfoot#table-reference {
+// Color relevance
+.r1 {
+  color: $r1;
+}
+.r2 {
+  color: $r2;
+}
+.r3 {
+  color: $r3;
+}
+.r4 {
+  color: $r4;
+}
+.r5 {
+  color: $r5;
+}
+.r6 {
+  color: $r6;
+}
+
+// Aligns selected table cells
+tbody > tr > td.centered {
+  text-align: center;
+}
+
+// Heading styles
+tbody > tr > td {
+  h1 {
+    @include heading-style(2.125rem, 400);
+  }
+
+  h2 {
+    @include heading-style(1.875rem, 400);
+  }
+
+  h3#exception {
+    @include heading-style(1.5rem, 400);
+    margin: 0;
+    background-color: transparent;
+    color: $main;
+    border: none;
+    border-radius: unset;
+    padding: 0;
+  }
+
+  h4 {
+    @include heading-style(1.25rem, 400);
+  }
+
+  h5 {
+    @include heading-style(1.125rem, 400);
+  }
+
+  h6 {
+    @include heading-style(1rem, 400);
+  }
+}
+
+// Table foot references
+tfoot.table-reference {
   & tr {
     & td {
       border: 1px solid transparent;
@@ -227,6 +288,27 @@ tfoot#table-reference {
   }
 }
 
+tfoot.table-reference a {
+  color: $reference-links;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:visited {
+    color: $reference-links;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $html;
+    text-shadow: 1px 1px 1px $background-lighter-darker;
+  }
+
+  &:active {
+    color: $main;
+  }
+}
+
+// Subtitle styles
 .html-subtitle {
   @include subtitle($html);
 }
@@ -235,13 +317,23 @@ tfoot#table-reference {
   @include subtitle($css);
 }
 
+// Inline typography styles
 .html {
   strong {
     font-weight: 700;
     color: $html-stronger;
   }
+
+  mark {
+    font-family: "Space Mono", sans-serif;
+    font-weight: 200;
+    background-color: $background-super-lighter;
+    padding: 0 0.35em;
+    border-radius: 0.5em;
+  }
 }
 
+// Global
 hr {
   border: 1px dashed $stroke;
 }
