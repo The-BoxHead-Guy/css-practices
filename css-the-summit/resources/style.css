@@ -1,0 +1,74 @@
+/* variables */
+:root {
+  --main-color: #2176ff;
+  --neutral-color: #ffffff;
+
+  /* links & buttons */
+  --anchor-color: #7e70b4;
+  --anchor-color-visited: #635795;
+  --anchor-color-active: #474b65;
+
+  --btn-color-background: #2f78ef;
+  --btn-color-background-darker: #2965c5;
+}
+
+a {
+  cursor: pointer;
+  color: var(--main-color);
+  position: relative;
+}
+
+a:visited {
+  color: var(--anchor-color-visited);
+}
+
+a:hover {
+  color: var(--main-color);
+}
+
+a:active {
+  color: var(--anchor-color-active);
+}
+
+/* button */
+a.btn {
+  background-color: var(--btn-color-background);
+  border: 1px solid var(--neutral-color);
+  color: var(--neutral-color);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  transition: all 1s ease-in-out;
+}
+
+a.btn:visited {
+  color: var(--neutral-color);
+}
+
+a.btn:hover {
+  color: var(--neutral-color);
+  background-color: var(--btn-color-background-darker);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+a.btn:active {
+  border: 1px solid var(--btn-color-background-darker);
+  transition: all 0.1s ease-in-out;
+}
+
+/* activity buttons */
+a.activity:visited {
+  color: var(--neutral-color);
+}
+
+a.activity:hover {
+  color: var(--main-color);
+  background-color: var(--neutral-color);
+  border: 1px solid var(--main-color);
+  transition: all 0.3s ease;
+  font-size: 34px;
+}
