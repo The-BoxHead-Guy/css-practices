@@ -49,18 +49,35 @@ main {
   & .container {
     @include containerBox;
     margin: 1em 0;
+    gap: 1em;
 
     & .subtitle {
       width: 40%;
       text-align: center;
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
 
       font: {
         size: 32px;
         family: sans-serif;
+      }
+
+      & .sticky {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include containerBox();
+        align-items: flex-start;
+
+        & h2 {
+          position: sticky;
+          top: 25%;
+          bottom: 25%;
+          left: 0;
+          padding: 5em 2em;
+        }
       }
     }
 
@@ -311,6 +328,7 @@ tfoot.table-reference a {
 // Subtitle styles
 .html-subtitle {
   @include subtitle($html);
+  padding: 0;
 }
 
 .css-subtitle {
@@ -352,4 +370,19 @@ article {
 
 p {
   line-height: 1.7;
+}
+
+.large {
+  height: 87em;
+}
+
+// Media queries
+@media screen and (max-width: 400px) {
+  .html-subtitle {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
 }
