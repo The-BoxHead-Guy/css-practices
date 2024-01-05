@@ -1,15 +1,40 @@
 // Main colors
-$html: #e44d26;
+$html: #ff5f35;
+$html-brighter: hsl(12, 95%, 75%);
+$html-stronger: #ff9b73;
 $css: #254bdd;
+$css-lighter: #6f8dff;
 
 // Primary
-$background: #55423d;
+$background: hsl(13, 16%, 29%);
+$background-lighter: hsl(13, 16%, 20%);
+$background-super-lighter: hsla(13, 16%, 20%, 0.5);
+$background-lighter-darker: hsl(13, 16%, 15%);
 $headline: #ffe;
 $paragraph: #fff3ec;
+$paragraph-dark: #140d0d;
+$reference-links: #f7987f;
 
 // table
 $stroke: #140d0d;
 $main: #fff3ec;
 $highlight: #e78fb3;
 $secondary: #ffc0ad;
+$secondary-transparent: hsla(14, 100%, 84%, 0.75);
 $tertiary: #9656a1;
+
+// Semantic tags
+$header: #450920;
+$footer: #a53860;
+$nav: #da627d;
+$main-color: #ffa5ab;
+$article: #f9dbbd;
+$aside: #f8d6b4;
+
+// Relevance Colors
+$r1: hsl(125, 100%, 60%);
+$r2: hsl(100, 100%, 60%);
+$r3: hsl(75, 100%, 60%);
+$r4: hsl(50, 100%, 60%);
+$r5: hsl(25, 100%, 60%);
+$r6: hsl(0, 100%, 60%);

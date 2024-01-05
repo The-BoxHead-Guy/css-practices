@@ -1,30 +1,25 @@
 @import "colors";
+@import "mixins";
 
 body {
   background-color: $background;
   color: $paragraph;
   margin: 5% 10%;
+  font-family: "open sans", sans-serif;
 }
 
 header {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
+  @include containerBox;
 
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 
   & .title-container {
     width: 40%;
 
     & h1.title {
+      @include heading-style(64px, 400);
       color: $headline;
-      font: {
-        size: 64px;
-        family: "Gugi", monospace;
-        weight: 400;
-      }
       text-align: left;
       text-shadow: 1px -1px 0px $stroke;
     }
@@ -45,5 +40,349 @@ header {
         }
       }
     }
+  }
+}
+
+main {
+  width: 100%;
+
+  & .container {
+    @include containerBox;
+    margin: 1em 0;
+    gap: 1em;
+
+    & .subtitle {
+      width: 40%;
+      text-align: center;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+
+      font: {
+        size: 32px;
+        family: sans-serif;
+      }
+
+      & .sticky {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include containerBox();
+        align-items: flex-start;
+
+        & h2 {
+          position: sticky;
+          top: 25%;
+          bottom: 25%;
+          left: 0;
+          padding: 5em 2em;
+        }
+      }
+    }
+
+    & .content {
+      width: 60%;
+      margin: 1em 0 1em;
+
+      & h3 {
+        background-color: $secondary-transparent;
+        padding: 1em;
+        border: 2px solid $stroke;
+        border-radius: 2px;
+        color: $paragraph-dark;
+        text-align: center;
+        margin: 2em 10em 2em;
+
+        font: {
+          size: 18px;
+          family: "Gugi", monospace;
+        }
+      }
+    }
+  }
+}
+
+// Semantic content
+.border {
+  border: 2px solid $stroke;
+  background-color: $secondary;
+  border-radius: 2px;
+  color: $paragraph-dark;
+
+  padding: 0.75em;
+  width: 100%;
+  text-align: center;
+}
+
+div.semantic__box {
+  & h4 {
+    padding: 0.5em;
+    color: $html-brighter;
+  }
+
+  width: 100%;
+  height: 100%;
+  margin: 2em 0;
+  padding: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  border: 2px dashed $background-lighter-darker;
+  border-radius: 2px;
+  background-color: $background-super-lighter;
+
+  font: {
+    size: 20px;
+    family: "Gugi", monospace;
+  }
+
+  & .header,
+  .nav,
+  .footer {
+    color: $main;
+  }
+
+  & .header {
+    background-color: $header;
+  }
+
+  & .nav {
+    background-color: $nav;
+  }
+
+  & .box-1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    max-height: 100%;
+    gap: 0.5em;
+
+    & .aside {
+      flex-shrink: 3;
+      background-color: $aside;
+      position: relative;
+
+      & p {
+        @include center-content();
+      }
+    }
+
+    & .main {
+      flex-shrink: 1;
+      background-color: $main-color;
+
+      & .article {
+        background-color: $article;
+        margin: 1em 0;
+      }
+    }
+  }
+
+  & .footer {
+    background-color: $footer;
+  }
+}
+
+// Table styles
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid $stroke;
+  border-radius: 2px;
+
+  & thead {
+    background-color: $background-lighter;
+
+    & th {
+      border: 1px solid $stroke;
+      padding: 1em;
+      text-align: center;
+      font: {
+        size: 18px;
+        family: "Gugi", monospace;
+        weight: 500;
+      }
+    }
+  }
+
+  & tbody {
+    & tr {
+      height: 4em;
+      position: relative;
+      background-color: $background-lighter-darker;
+
+      & td {
+        border: 1px solid $stroke;
+        padding: 0.75em;
+        vertical-align: middle;
+      }
+
+      & td:nth-child(1) {
+        text-align: center;
+        font-family: "space mono", monospace;
+      }
+
+      & td:nth-child(3) {
+        font-family: "space mono", monospace;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Color relevance
+.r1 {
+  color: $r1;
+}
+.r2 {
+  color: $r2;
+}
+.r3 {
+  color: $r3;
+}
+.r4 {
+  color: $r4;
+}
+.r5 {
+  color: $r5;
+}
+.r6 {
+  color: $r6;
+}
+
+// Aligns selected table cells
+tbody > tr > td.centered {
+  text-align: center;
+}
+
+// Heading styles
+tbody > tr > td {
+  h1 {
+    @include heading-style(2.125rem, 400);
+  }
+
+  h2 {
+    @include heading-style(1.875rem, 400);
+  }
+
+  h3#exception {
+    @include heading-style(1.5rem, 400);
+    margin: 0;
+    background-color: transparent;
+    color: $main;
+    border: none;
+    border-radius: unset;
+    padding: 0;
+  }
+
+  h4 {
+    @include heading-style(1.25rem, 400);
+  }
+
+  h5 {
+    @include heading-style(1.125rem, 400);
+  }
+
+  h6 {
+    @include heading-style(1rem, 400);
+  }
+}
+
+// Table foot references
+tfoot.table-reference {
+  & tr {
+    & td {
+      border: 1px solid transparent;
+      border-radius: 0 0 1em 1em;
+      background-color: $background-super-lighter;
+      padding: 1.25em 0;
+      text-align: center;
+    }
+  }
+}
+
+tfoot.table-reference a {
+  color: $reference-links;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:visited {
+    color: $reference-links;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $html;
+    text-shadow: 1px 1px 1px $background-lighter-darker;
+  }
+
+  &:active {
+    color: $main;
+  }
+}
+
+// Subtitle styles
+.html-subtitle {
+  @include subtitle($html);
+  padding: 0;
+}
+
+.css-subtitle {
+  @include subtitle($css);
+}
+
+// Inline typography styles
+.html {
+  strong {
+    font-weight: 700;
+    color: $html-stronger;
+  }
+
+  mark {
+    font-family: "Space Mono", sans-serif;
+    font-weight: 200;
+    background-color: $background-super-lighter;
+    padding: 0 0.35em;
+    border-radius: 0.5em;
+  }
+}
+
+// Global
+hr {
+  border: 1px dashed $stroke;
+}
+
+.css {
+  color: $css-lighter;
+}
+
+article {
+  text: {
+    align: left;
+    indent: 1em;
+  }
+  margin-bottom: 2em;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.large {
+  height: 87em;
+}
+
+// Media queries
+@media screen and (max-width: 400px) {
+  .html-subtitle {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
   }
 }
