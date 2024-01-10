@@ -245,13 +245,16 @@
           <h2 class="css-subtitle">CSS</h2>
         </div>
         <div class="content css">
-          <h3 class="css-title">Selectors</h3>
+          <h3 class="css-title">Specificity</h3>
           <article>
             <p>
-              <mark>Selectors</mark> are used to
-              <strong>target</strong> elements in the HTML or to
-              <strong>style</strong> them with CSS. Let's view 5 ways of
-              selecting elements in <strong>CSS</strong>
+              <mark>Specificity</mark> is used to <strong>define</strong> the
+              priority of styling of elements, depending on <em>how</em> an
+              element is selected is the amount of specificity that will
+              adquire. <br />
+
+              <br />Let's view 5 ways of defining specificity in
+              <strong>CSS</strong>
             </p>
           </article>
 
@@ -259,43 +262,51 @@
           <ul class="selector__box">
             <li class="selector__box--title">
               <h4>Elements</h4>
-              <img
-                src="/resources/img/type-snippet.png"
-                alt="type code snippet of selectors in CSS"
-                class="selector__box--img"
-              />
+              <pre>
+                <code class="selector__box--code">
+                  <span class="selector-word">h1</span> {
+                    color: white;
+                  }
+                </code>
+              </pre>
             </li>
             <li class="selector__box--title">
               <h4>Class</h4>
-              <img
-                src="/resources/img/class-snippet.png"
-                alt="Class code snippet of selectors in CSS"
-                class="selector__box--img"
-              />
+              <pre>
+                <code class="selector__box--code">
+                  <span class="selector-word">.myClass</span> {
+                    padding: 1rem;
+                  }
+                </code>
+              </pre>
             </li>
             <li class="selector__box--title">
               <h4>ID</h4>
-              <img
-                src="/resources/img/id-snippet.png"
-                alt="ID"
-                class="selector__box--img"
-              />
+              <pre>
+                <code class="selector__box--code">
+                  <span class="selector-word">#myId</span> {
+                    display: block;
+                  }
+                </code>
+              </pre>
             </li>
             <li class="selector__box--title">
               <h4>Inline Selectors</h4>
-              <img
-                src="/resources/img/inline-snippet.png"
-                alt="Inline CSS selectors"
-                class="selector__box--img"
-              />
+              <pre>
+                <code class="selector__box--code">
+                  &lt;p <span class="selector-word">style="color: white;"</span>&gt;Hello World&lt;h1&gt;
+                </code>
+              </pre>
             </li>
             <li class="selector__box--title">
               <h4>!important</h4>
-              <img
-                src="/resources/img/important-snippet.png"
-                alt="ID"
-                class="selector__box--img"
-              />
+              <pre>
+                <code class="selector__box--code">
+                  div {
+                    color: white <span class="selector-word">!important</span>;
+                  }
+                </code>
+              </pre>
             </li>
           </ul>
           <h3 class="css-title">Box Model</h3>

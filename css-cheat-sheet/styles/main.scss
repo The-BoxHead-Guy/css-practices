@@ -117,7 +117,7 @@ main {
   gap: 1em;
   border: 2px dashed #785d59;
   border-radius: 2px;
-  padding: 1em;
+  padding: 1.2em;
   background-color: $background-lighter-darker;
 
   &--title {
@@ -125,13 +125,36 @@ main {
     width: 275px;
 
     & h4 {
-      background-color: $background-lighter;
       border-radius: 6px;
-      padding: 1em 0;
+      padding: 0.5em 0;
       color: $css;
 
       text-transform: uppercase;
       letter-spacing: 1px;
+    }
+
+    & pre {
+      background-color: $background-lighter;
+      width: 90%;
+      font-size: 14px;
+      border: 1px solid $css-lighter;
+      border-left: 12px solid $css;
+      border-radius: 2px;
+      height: 85px;
+      position: relative;
+      padding: 12px;
+      margin: 0 auto;
+    }
+  }
+
+  &--code {
+    font-family: "Space Mono", monospace;
+    @include center-content();
+    width: 90%;
+
+    & span.selector-word {
+      color: $css-code;
+      font-weight: bold;
     }
   }
 
