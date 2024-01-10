@@ -99,6 +99,10 @@ main {
           family: "Gugi", monospace;
         }
       }
+
+      & h3.blue {
+        background-color: $tertiary;
+      }
     }
   }
 }
