@@ -1,15 +1,18 @@
 // Main colors
 $html: #ff5f35;
 $html-brighter: hsl(12, 95%, 75%);
-$html-stronger: #ff9b73;
+$html-stronger: #ff6c47;
 $css: #254bdd;
 $css-lighter: #6f8dff;
 
 // Primary
-$background: hsl(13, 16%, 29%);
+$background: hsl(8, 15%, 21%);
 $background-lighter: hsl(13, 16%, 20%);
-$background-super-lighter: hsla(13, 16%, 20%, 0.5);
+$background-super-lighter: hsla(13, 15%, 17%, 0.9);
 $background-lighter-darker: hsl(13, 16%, 15%);
+
+$border-lighter-darker: hsl(8, 15%, 41%);
+
 $headline: #ffe;
 $paragraph: #fff3ec;
 $paragraph-dark: #140d0d;
@@ -20,16 +23,16 @@ $stroke: #140d0d;
 $main: #fff3ec;
 $highlight: #e78fb3;
 $secondary: #ffc0ad;
-$secondary-transparent: hsla(14, 100%, 84%, 0.75);
+$secondary-transparent: hsl(12, 81%, 70%);
 $tertiary: #9656a1;
 
 // Semantic tags
-$header: #450920;
-$footer: #a53860;
-$nav: #da627d;
-$main-color: #ffa5ab;
-$article: #f9dbbd;
-$aside: #f8d6b4;
+$header: hsl(11, 50%, 47%);
+$nav: #5b1e10;
+$aside: #863d2d;
+$main-color: hsl(11, 50%, 21%);
+$article: #9e442e;
+$footer: #5b1e10;
 
 // Relevance Colors
 $r1: hsl(125, 100%, 60%);
@@ -37,4 +40,4 @@ $r2: hsl(100, 100%, 60%);
 $r3: hsl(75, 100%, 60%);
 $r4: hsl(50, 100%, 60%);
 $r5: hsl(25, 100%, 60%);
-$r6: hsl(0, 100%, 60%);
+$r6: hsl(0, 100%, 64%);

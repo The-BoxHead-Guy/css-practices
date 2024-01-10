@@ -1,5 +1,5 @@
 body {
-  background-color: #56433e;
+  background-color: #3e302e;
   color: #fff3ec;
   margin: 5% 10%;
   font-family: "open sans", sans-serif; }
@@ -67,7 +67,7 @@ main {
       width: 60%;
       margin: 1em 0 1em; }
       main .container .content h3 {
-        background-color: rgba(255, 192, 173, 0.75);
+        background-color: #f08d75;
         padding: 1em;
         border: 2px solid #140d0d;
         border-radius: 2px;
@@ -96,9 +96,9 @@ div.semantic__box {
   align-items: center;
   justify-content: space-between;
   gap: 0.5em;
-  border: 2px dashed #2c2320;
+  border: 2px dashed #785d59;
   border-radius: 2px;
-  background-color: rgba(59, 46, 43, 0.5);
+  background-color: rgba(50, 40, 37, 0.9);
   font-size: 20px;
   font-family: "Gugi", monospace; }
   div.semantic__box h4 {
@@ -109,9 +109,9 @@ div.semantic__box {
   div.semantic__box .footer {
     color: #fff3ec; }
   div.semantic__box .header {
-    background-color: #450920; }
+    background-color: #b4523c; }
   div.semantic__box .nav {
-    background-color: #da627d; }
+    background-color: #5b1e10; }
   div.semantic__box .box-1 {
     display: flex;
     flex-flow: row nowrap;
@@ -121,7 +121,8 @@ div.semantic__box {
     gap: 0.5em; }
     div.semantic__box .box-1 .aside {
       flex-shrink: 3;
-      background-color: #f8d6b4;
+      background-color: #863d2d;
+      color: #fff3ec;
       position: relative; }
       div.semantic__box .box-1 .aside p {
         position: absolute;
@@ -130,12 +131,14 @@ div.semantic__box {
         transform: translate(-50%, -50%); }
     div.semantic__box .box-1 .main {
       flex-shrink: 1;
-      background-color: #ffa5ab; }
+      background-color: #50251b;
+      color: #fff3ec; }
       div.semantic__box .box-1 .main .article {
-        background-color: #f9dbbd;
+        background-color: #9e442e;
+        color: #fff3ec;
         margin: 1em 0; }
   div.semantic__box .footer {
-    background-color: #a53860; }
+    background-color: #5b1e10; }
 
 table {
   width: 100%;
@@ -182,7 +185,7 @@ table {
   color: #ff8833; }
 
 .r6 {
-  color: #ff3333; }
+  color: #ff4747; }
 
 tbody > tr > td.centered {
   text-align: center; }
@@ -221,7 +224,7 @@ tbody > tr > td h6 {
 tfoot.table-reference tr td {
   border: 1px solid transparent;
   border-radius: 0 0 1em 1em;
-  background-color: rgba(59, 46, 43, 0.5);
+  background-color: rgba(50, 40, 37, 0.9);
   padding: 1.25em 0;
   text-align: center; }
 
@@ -256,12 +259,12 @@ tfoot.table-reference a {
   width: 70%; }
 
 .html strong {
-  font-weight: 700;
-  color: #ff9b73; }
+  font-weight: 400;
+  color: #ff6c47; }
 .html mark {
   font-family: "Space Mono", sans-serif;
   font-weight: 200;
-  background-color: rgba(59, 46, 43, 0.5);
+  background-color: rgba(50, 40, 37, 0.9);
   padding: 0 0.35em;
   border-radius: 0.5em; }
 

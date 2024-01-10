@@ -130,7 +130,7 @@ div.semantic__box {
   align-items: center;
   justify-content: space-between;
   gap: 0.5em;
-  border: 2px dashed $background-lighter-darker;
+  border: 2px dashed $border-lighter-darker;
   border-radius: 2px;
   background-color: $background-super-lighter;
 
@@ -164,6 +164,7 @@ div.semantic__box {
     & .aside {
       flex-shrink: 3;
       background-color: $aside;
+      color: $main;
       position: relative;
 
       & p {
@@ -174,9 +175,11 @@ div.semantic__box {
     & .main {
       flex-shrink: 1;
       background-color: $main-color;
+      color: $main;
 
       & .article {
         background-color: $article;
+        color: $main;
         margin: 1em 0;
       }
     }
@@ -338,7 +341,7 @@ tfoot.table-reference a {
 // Inline typography styles
 .html {
   strong {
-    font-weight: 700;
+    font-weight: 400;
     color: $html-stronger;
   }
 
