@@ -259,49 +259,49 @@
           </article>
 
           <!-- selectors -->
-          <ul class="selector__box">
-            <li class="selector__box--title">
+          <ul class="specificity__box">
+            <li class="specificity__box--title">
               <h4>Elements</h4>
               <pre>
-                <code class="selector__box--code">
+                <code class="specificity__box--code">
                   <span class="selector-word">h1</span> {
                     color: white;
                   }
                 </code>
               </pre>
             </li>
-            <li class="selector__box--title">
+            <li class="specificity__box--title">
               <h4>Class</h4>
               <pre>
-                <code class="selector__box--code">
+                <code class="specificity__box--code">
                   <span class="selector-word">.myClass</span> {
                     padding: 1rem;
                   }
                 </code>
               </pre>
             </li>
-            <li class="selector__box--title">
+            <li class="specificity__box--title">
               <h4>ID</h4>
               <pre>
-                <code class="selector__box--code">
+                <code class="specificity__box--code">
                   <span class="selector-word">#myId</span> {
                     display: block;
                   }
                 </code>
               </pre>
             </li>
-            <li class="selector__box--title">
+            <li class="specificity__box--title">
               <h4>Inline Selectors</h4>
               <pre>
-                <code class="selector__box--code">
+                <code class="specificity__box--code">
                   &lt;p <span class="selector-word">style="color: white;"</span>&gt;Hello World&lt;h1&gt;
                 </code>
               </pre>
             </li>
-            <li class="selector__box--title">
+            <li class="specificity__box--title">
               <h4>!important</h4>
               <pre>
-                <code class="selector__box--code">
+                <code class="specificity__box--code">
                   div {
                     color: white <span class="selector-word">!important</span>;
                   }
@@ -309,11 +309,111 @@
               </pre>
             </li>
           </ul>
-          <h3 class="css-title">Box Model</h3>
-          <article>
-            <p></p>
-          </article>
-          <h3 class="css-title">Display property</h3>
+
+          <!-- Box model -->
+          <div class="box-model">
+            <h3 class="css-title">Box Model</h3>
+            <article>
+              <p class="box-model__text">
+                The box model represents how the size of any element is
+                calculated based on 4 properties. In addition, it conveys that
+                any HTML element functions as a <strong>box</strong>.
+              </p>
+              <ul class="box-model__list">
+                <li class="box-model__list--items">
+                  <p>
+                    <strong>Margin</strong>: Defines de space around an element
+                  </p>
+                </li>
+                <li class="box-model__list--items">
+                  <p>
+                    <strong>Border</strong>: Defines the line around an element
+                  </p>
+                </li>
+                <li class="box-model__list--items">
+                  <p>
+                    <strong>Padding</strong>: Defines the space inside an
+                    element
+                  </p>
+                </li>
+                <li class="box-model__list--items">
+                  <p>
+                    <strong>Content</strong>: There's defined the width and
+                    height of the content
+                  </p>
+                </li>
+              </ul>
+              <p>Let's see the box model in action:</p>
+            </article>
+
+            <!-- Box model ilustration -->
+            <div class="margin">
+              <div class="border">
+                <div class="padding">
+                  <div class="size">Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="display">
+            <h3 class="css-title">Display property</h3>
+            <article>
+              <p>
+                The <strong>display</strong> property specifies the type of
+                display that is used by an element which is shown on the browser
+                once it's added to the document. <br /><br />
+
+                In order to use it, it's written: <mark>display: block</mark
+                ><br /><br />
+
+                Let's review the most known of them:
+              </p>
+            </article>
+            <table>
+              <thead>
+                <tr>
+                  <th>Display</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Block</td>
+                  <td>Occupies the entire width of the container</td>
+                </tr>
+                <tr>
+                  <td>Inline</td>
+                  <td>Fills the container with the enough amount of space</td>
+                </tr>
+                <tr>
+                  <td>Inline-block</td>
+                  <td>
+                    It allows to have an inline behaviour but with the allowing
+                    of setting the <strong>width</strong> and
+                    <strong>height</strong> of the element
+                  </td>
+                </tr>
+                <tr>
+                  <td>None</td>
+                  <td>The element is not displayed</td>
+                </tr>
+                <tr>
+                  <td>Flex</td>
+                  <td>
+                    It uses the <strong>flexbox</strong> model as a flexible way
+                    to display elements
+                  </td>
+                </tr>
+                <tr>
+                  <td>Grid</td>
+                  <td>
+                    It uses the <strong>grid</strong> model in order to create
+                    complex layouts
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </main>
