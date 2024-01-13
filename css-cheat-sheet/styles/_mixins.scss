@@ -28,3 +28,7 @@
     weight: $weight;
   }
 }
+
+@mixin background-transition-ease($duration) {
+  transition: all $duration ease-in-out;
+}

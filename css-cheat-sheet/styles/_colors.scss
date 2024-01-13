@@ -30,6 +30,17 @@ $secondary-transparent: hsl(12, 81%, 70%);
 $tertiary: #7597f0;
 $tertiary-transparent: #7597f0;
 
+// Ilustrations parameters
+$box-model-radius: 6px;
+$box-model-margin: hsl(227, 100%, 65%);
+$box-model-margin-hover: hsl(237, 20%, 50%);
+$box-model-border: hsl(217, 100%, 65%);
+$box-model-border-hover: hsl(247, 20%, 50%);
+$box-model-padding: hsl(207, 100%, 65%);
+$box-model-padding-hover: hsl(257, 20%, 50%);
+$box-model-content: hsl(197, 100%, 65%);
+$box-model-content-hover: hsl(267, 20%, 50%);
+
 // Semantic tags
 $header: hsl(11, 50%, 47%);
 $nav: #5b1e10;
