@@ -52,7 +52,7 @@ main {
     gap: 1em;
 
     & .subtitle {
-      width: 40%;
+      width: 30%;
       text-align: center;
       display: flex;
       flex-flow: column nowrap;
@@ -68,21 +68,23 @@ main {
         position: relative;
         width: 100%;
         height: 100%;
-        @include containerBox();
-        align-items: flex-start;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
 
         & h2 {
           position: sticky;
           top: 25%;
           bottom: 25%;
           left: 0;
-          padding: 5em 2em;
+          padding: 5em 0em;
         }
       }
     }
 
     & .content {
-      width: 60%;
+      width: 70%;
       margin: 0 0 1em 0;
 
       & h3 {
@@ -590,6 +592,10 @@ p {
 
 .large {
   height: 87em;
+}
+
+.large-two {
+  height: 71em;
 }
 
 // Media queries
