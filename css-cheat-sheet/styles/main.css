@@ -2,7 +2,8 @@ body {
   background-color: #3e302e;
   color: #fff3ec;
   margin: 5% 10%;
-  font-family: "open sans", sans-serif; }
+  font-family: "open sans", sans-serif;
+  font-size: 16px; }
 
 header {
   display: flex;
@@ -154,7 +155,7 @@ div.semantic__box {
   background-color: #2c2320; }
   .specificity__box--title {
     text-align: center;
-    width: 275px; }
+    width: 45%; }
     .specificity__box--title h4 {
       border-radius: 6px;
       padding: 0.5em 0;
@@ -168,7 +169,7 @@ div.semantic__box {
       border: 1px solid #6f8dff;
       border-left: 12px solid #7895ff;
       border-radius: 2px;
-      height: 85px;
+      height: 7em;
       position: relative;
       padding: 12px;
       margin: 0 auto; }
@@ -193,14 +194,14 @@ div.semantic__box {
   border: 1px dashed #140d0d;
   border-radius: 2px;
   margin: 1.75em 0;
-  height: 175px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   gap: 0.55em; }
   .box-model__list--items p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 1em; }
 
 .box-model__container {
   width: 350px;
@@ -435,11 +436,97 @@ p {
 .large-two {
   height: 71em; }
 
-@media screen and (max-width: 400px) {
-  .html-subtitle {
+@media screen and (max-width: 768px) {
+  hr {
     display: none; }
 
-  .hidden {
-    display: none; } }
+  header .title-container {
+    width: 75%; }
+    header .title-container h1.title {
+      font-size: 4.5em; }
+  header .tech {
+    width: 25%; }
+
+  div.container {
+    font-size: 1.5em; }
+    div.container .subtitle {
+      display: none; }
+    div.container .content {
+      width: 100%; }
+      div.container .content h3 {
+        font-size: 1.25em;
+        padding: 0.85em;
+        margin: 2em 4.5em 2em; }
+
+  table thead th {
+    font-size: 1.375em; }
+  table tbody td {
+    font-size: 1em; }
+
+  p {
+    font-size: 1.125em;
+    text-align: justify; }
+
+  .specificity__box--title {
+    width: 100%; }
+    .specificity__box--title:last-child {
+      margin-bottom: 1em; }
+    .specificity__box--title pre {
+      font-size: 1.125em; }
+
+  .box-model__container {
+    width: 95%;
+    height: 550px;
+    font-size: 1.125em; } }
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    header .title-container {
+      width: 100%; }
+      header .title-container h1.title {
+        font-size: 3.25em;
+        text-align: center; }
+    header .tech {
+      width: 100%; }
+      header .tech ul {
+        justify-content: center; }
+
+  div.container {
+    font-size: 1.5em; }
+    div.container .subtitle {
+      display: none; }
+    div.container .content {
+      width: 100%; }
+      div.container .content h3 {
+        font-size: 1.25em;
+        padding: 0.5em;
+        margin: 2em 4.5em 2em; }
+
+  table thead th {
+    font-size: 1.375em; }
+  table tbody td {
+    font-size: 1em; }
+
+  p {
+    font-size: 1.125em;
+    text-align: justify; }
+
+  .specificity__box--title {
+    width: 100%; }
+    .specificity__box--title:last-child {
+      margin-bottom: 1em; }
+    .specificity__box--title pre {
+      font-size: 1.125em; }
+
+  .box-model__container {
+    width: 95%;
+    height: 550px;
+    font-size: 1.125em; } }
 
 /*# sourceMappingURL=main.css.map */

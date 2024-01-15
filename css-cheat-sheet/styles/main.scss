@@ -6,6 +6,7 @@ body {
   color: $paragraph;
   margin: 5% 10%;
   font-family: "open sans", sans-serif;
+  font-size: 16px;
 }
 
 header {
@@ -211,7 +212,7 @@ div.semantic__box {
 
   &--title {
     text-align: center;
-    width: 275px;
+    width: 45%;
 
     & h4 {
       border-radius: 6px;
@@ -229,7 +230,7 @@ div.semantic__box {
       border: 1px solid $css-lighter;
       border-left: 12px solid $css;
       border-radius: 2px;
-      height: 85px;
+      height: 7em;
       position: relative;
       padding: 12px;
       margin: 0 auto;
@@ -260,7 +261,6 @@ div.semantic__box {
   border: 1px dashed $stroke;
   border-radius: 2px;
   margin: 1.75em 0;
-  height: 175px;
   width: 100%;
 
   display: flex;
@@ -271,6 +271,7 @@ div.semantic__box {
   &--items {
     & p {
       margin-bottom: 0;
+      font-size: 1em;
     }
   }
 }
@@ -599,13 +600,167 @@ p {
 }
 
 // Media queries
-@media screen and (max-width: 400px) {
-  .html-subtitle {
+
+@media screen and (max-width: 768px) {
+  hr {
     display: none;
   }
 
-  .hidden {
-    display: none;
+  header {
+    & .title-container {
+      width: 75%;
+
+      & h1.title {
+        font-size: 4.5em;
+      }
+    }
+
+    & .tech {
+      width: 25%;
+    }
+  }
+
+  div.container {
+    font-size: 1.5em;
+
+    & .subtitle {
+      display: none;
+    }
+
+    & .content {
+      width: 100%;
+
+      & h3 {
+        font-size: 1.25em;
+        padding: 0.85em;
+        margin: 2em 4.5em 2em;
+      }
+    }
+  }
+
+  table {
+    & thead {
+      & th {
+        font-size: 1.375em;
+      }
+    }
+
+    & tbody {
+      & td {
+        font-size: 1em;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.125em;
+    text-align: justify;
+  }
+
+  .specificity__box {
+    &--title {
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 1em;
+      }
+
+      & pre {
+        font-size: 1.125em;
+      }
+    }
+  }
+
+  .box-model__container {
+    width: 95%;
+    height: 550px;
+    font-size: 1.125em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    & .title-container {
+      width: 100%;
+
+      & h1.title {
+        font-size: 3.25em;
+        text-align: center;
+      }
+    }
+
+    & .tech {
+      width: 100%;
+
+      & ul {
+        justify-content: center;
+      }
+    }
+  }
+
+  div.container {
+    font-size: 1.5em;
+
+    & .subtitle {
+      display: none;
+    }
+
+    & .content {
+      width: 100%;
+
+      & h3 {
+        font-size: 1.25em;
+        padding: 0.5em;
+        margin: 2em 4.5em 2em;
+      }
+    }
+  }
+
+  table {
+    & thead {
+      & th {
+        font-size: 1.375em;
+      }
+    }
+
+    & tbody {
+      & td {
+        font-size: 1em;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.125em;
+    text-align: justify;
+  }
+
+  .specificity__box {
+    &--title {
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 1em;
+      }
+
+      & pre {
+        font-size: 1.125em;
+      }
+    }
+  }
+
+  .box-model__container {
+    width: 95%;
+    height: 550px;
+    font-size: 1.125em;
   }
 }
 
