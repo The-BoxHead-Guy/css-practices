@@ -1,19 +1,71 @@
 @import "colors";
 @import "mixins";
 
+//
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background;
   color: $paragraph;
-  margin: 5% 10%;
+  margin: 2.5em auto;
   font-family: "open sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: stable;
+}
+
+hr {
+  border: 1px dashed $stroke;
+
+  // *Fixed margin view
+  margin: 2em 0;
+}
+
+mark {
+  font-family: "Space Mono", sans-serif;
+  font-weight: 200;
+  background-color: $background-super-lighter;
+  padding: 0 0.35em;
+  border-radius: 0.5em;
+}
+
+article {
+  text: {
+    align: left;
+    indent: 1em;
+  }
+  margin-bottom: 2em;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 1em;
+  text-wrap: pretty;
+}
+
+.large {
+  height: 87em;
+}
+
+.large-two {
+  height: 71em;
 }
 
 header {
   @include containerBox;
 
-  width: 100%;
-  margin-bottom: 3em;
+  width: 90%;
+  margin: 0 auto;
 
   & .title-container {
     width: 40%;
@@ -33,7 +85,7 @@ header {
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
-      gap: 0.25em;
+      gap: 1.25em;
 
       & li {
         & img {
@@ -45,7 +97,8 @@ header {
 }
 
 main {
-  width: 100%;
+  width: 90%;
+  margin: auto;
 
   & .container {
     @include containerBox;
@@ -549,7 +602,6 @@ tfoot.table-reference a {
   strong {
     font-weight: 400;
     color: $html-stronger;
-    font-family: "space mono", monospace;
   }
 }
 
@@ -558,50 +610,12 @@ tfoot.table-reference a {
   strong {
     font-weight: 400;
     color: $css-lighter;
-    font-family: "space mono", monospace;
   }
-}
-
-// Global
-hr {
-  border: 1px dashed $stroke;
-
-  // *Fixed margin view
-  margin: 2em 0;
-}
-
-mark {
-  font-family: "Space Mono", sans-serif;
-  font-weight: 200;
-  background-color: $background-super-lighter;
-  padding: 0 0.35em;
-  border-radius: 0.5em;
-}
-
-article {
-  text: {
-    align: left;
-    indent: 1em;
-  }
-  margin-bottom: 2em;
-}
-
-p {
-  line-height: 1.7;
-  margin-bottom: 1em;
-}
-
-.large {
-  height: 87em;
-}
-
-.large-two {
-  height: 71em;
 }
 
 // Media queries
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 855px) {
   hr {
     display: none;
   }
@@ -654,7 +668,6 @@ p {
 
   p {
     font-size: 1.125em;
-    text-align: justify;
   }
 
   .specificity__box {
@@ -684,6 +697,7 @@ p {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    gap: 0.5em;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -692,7 +706,7 @@ p {
       width: 100%;
 
       & h1.title {
-        font-size: 3.25em;
+        font-size: 3.5em;
         text-align: center;
       }
     }
@@ -724,6 +738,10 @@ p {
     }
   }
 
+  .display-overflow-mobile {
+    overflow-x: auto;
+  }
+
   table {
     & thead {
       & th {
@@ -739,8 +757,7 @@ p {
   }
 
   p {
-    font-size: 1.125em;
-    text-align: justify;
+    font-size: 1em;
   }
 
   .specificity__box {
