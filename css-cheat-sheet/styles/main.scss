@@ -477,7 +477,7 @@ table {
       background-color: $background-lighter-darker;
 
       & td {
-        border: 1px solid $stroke;
+        border: 2px solid $stroke;
         padding: 0.75em;
         vertical-align: middle;
       }
@@ -728,12 +728,11 @@ tfoot.table-reference a {
     }
 
     & .content {
-      width: 100%;
-
       & h3 {
-        font-size: 1.25em;
-        padding: 0.5em;
-        margin: 2em 4.5em 2em;
+        font-size: 1em;
+        width: 85%;
+        margin: 3.25em auto 2em;
+        padding: 0.7em;
       }
     }
   }
@@ -745,19 +744,40 @@ tfoot.table-reference a {
   table {
     & thead {
       & th {
-        font-size: 1.375em;
+        font-size: 1em;
+
+        &.r-base {
+          display: none;
+        }
       }
     }
 
     & tbody {
       & td {
-        font-size: 1em;
+        font-size: 0.725em;
       }
+    }
+
+    & tfoot.table-reference {
+      font-size: 0.825em;
     }
   }
 
+  .r1,
+  .r2,
+  .r3,
+  .r4,
+  .r5,
+  .r6 {
+    display: none;
+  }
+
+  #exception {
+    width: 100%;
+  }
+
   p {
-    font-size: 1em;
+    font-size: 0.825em;
   }
 
   .specificity__box {
@@ -769,15 +789,23 @@ tfoot.table-reference a {
       }
 
       & pre {
-        font-size: 1.125em;
+        font-size: 0.75em;
+      }
+
+      & h4 {
+        font-size: 0.95em;
       }
     }
   }
 
   .box-model__container {
-    width: 95%;
-    height: 550px;
-    font-size: 1.125em;
+    width: 90vw;
+    height: 45vh;
+    font-size: 0.7em;
+  }
+
+  .box-model__list--items p {
+    font-size: 0.75em;
   }
 }
 
