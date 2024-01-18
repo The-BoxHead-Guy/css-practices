@@ -1,0 +1,44 @@
+:root {
+  /* Colors */
+  --background: #004643;
+  --headline: #fffffe;
+  --paragragh: #abd1c6;
+
+  /* Illustrations */
+  --stroke: #001e1d;
+  --main: #e8e4e6;
+  --highlight: f9bc60;
+  --shadow: #001e1d;
+  --secondary: #abd1c6;
+  --tertiary: #e16162;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--headline);
+  font-family: "raleway", sans-serif;
+}
+
+/* Project */
+header {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+
