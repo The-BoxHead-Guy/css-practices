@@ -15,6 +15,8 @@
 
   /* constraints */
   --border-radius: 1em;
+  --h2-letter-spacing: 2px;
+  --h2-font-size: 1.5em;
 }
 
 /* Global */
@@ -47,7 +49,8 @@ h6 {
 }
 
 h2 {
-  letter-spacing: 2px;
+  letter-spacing: var(--h2-letter-spacing);
+  font-size: var(h2--font-size);
 }
 
 section {
@@ -58,6 +61,12 @@ section {
 
   display: flex;
   background-color: #001e1d;
+}
+
+p {
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .monospace {
@@ -148,16 +157,23 @@ section.text-styles {
 
 .text-styles__h1--title {
   font-size: 2.5em;
+  font-weight: bold;
+  font-family: "inter", sans-serif;
 }
 
 .text-styles__h2--sub-headings {
-  font-size: 1.5em;
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  letter-spacing: var(--h2-letter-spacing);
+  font-family: "Inter", sans-serif;
 }
 
-.text-styles__h3--support-titles {
-  font-size: 1em;
+.text-styles__p--paragraph {
+  font-size: 1.125em;
+  font-weight: 400;
 }
 
+/* Flex */
 .box-2 {
   display: flex;
   flex-flow: column wrap;
