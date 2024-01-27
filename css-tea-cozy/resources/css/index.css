@@ -1,0 +1,21 @@
+:root {
+  --default-font-family: "Helvetica";
+  --default-font-size: 22px;
+  --default-line-height: 1.5;
+  --default-font-weight: normal;
+  --default-font-style: normal;
+
+  /* colors */
+  --color-seashell: seashell;
+  --color-background-black: black;
+  --default-opacity: 0.9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
