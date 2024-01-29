@@ -42,6 +42,7 @@ a {
   color: var(--color-seashell);
 }
 
+/* header */
 header {
   width: 100%;
   height: 69px;
@@ -104,6 +105,37 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+/* mission section */
+.mission {
+  position: relative;
+  background-image: url(/resources/img/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1200px;
+  width: 90%;
+  margin: 70px auto;
+
+  .mission__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+
+    background-color: var(--color-background-black);
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
     }
   }
 }
