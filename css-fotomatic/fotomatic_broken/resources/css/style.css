@@ -5,6 +5,10 @@ html {
   font-size: 16px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -55,14 +59,32 @@ header .logo {
   font-size: 1.5rem;
   color: #4a4a4a;
   letter-spacing: 2px;
+
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(0);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 header nav ul {
   display: flex;
-}
-
-nav li {
-  padding-left: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
 }
 
 nav a {
@@ -70,16 +92,73 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  display: flex;
+
+  img {
+    transition: all 0.3s ease-in;
+  }
+
+  img:hover {
+    transition: all 0.3s ease-in;
+    transform: scale(1.1);
+  }
 }
 
 header .icon {
-  width: 1rem;
+  width: 1.5rem;
   padding-left: 0.75rem;
 }
 
 header .mobile {
   display: none;
 }
+
+header .mobile .button,
+header .desktop .button {
+  padding: 0.1875rem 0.5rem;
+  background-color: #9dc20b;
+  line-height: 1.6;
+  color: white;
+
+  &:hover {
+    background-color: hsl(83, 89%, 40%);
+  }
+}
+
+nav.desktop > ul > li:nth-child(4),
+header .tablet {
+  transform: scale(0);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  nav.desktop > ul > li:nth-child(4),
+  header .tablet {
+    transform: scale(1);
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  header .desktop .button {
+    animation-name: follow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+/* @keyframes follow {
+  0% {
+    padding: 0.1875rem 0.5rem;
+  }
+
+  50% {
+    padding: 0.2875rem 0.6rem;
+  }
+
+  100% {
+    padding: 0.1875rem 0.5rem;
+  }
+} */
 
 @media only screen and (max-width: 760px) {
   header .desktop {
@@ -104,13 +183,12 @@ header .mobile {
 
   header .mobile li {
     padding: 0;
-  }
+    transition: all 0.2s ease;
 
-  header .mobile .button {
-    padding: 0.1875rem 0.5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.2s ease;
+    }
   }
 }
 
@@ -190,6 +268,7 @@ header .mobile {
     height: auto;
     background-color: transparent;
     border: none;
+    margin: 0;
   }
 
   #sign-up-cta .content {
@@ -210,6 +289,10 @@ header .mobile {
 }
 
 @media only screen and (max-width: 450px) {
+  #sign-up-cta {
+    padding: 0;
+  }
+
   #sign-up-section {
     height: 20rem;
   }
@@ -220,6 +303,20 @@ header .mobile {
 
   #sign-up-cta h2 {
     font-size: 2rem;
+  }
+
+  #sign-up-cta .content {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  header .content nav.mobile {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 
@@ -285,7 +382,7 @@ img {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1.25rem 1rem 1.7rem 1rem;
   }
 }
 
@@ -378,19 +475,29 @@ img {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
-    padding: 1.875rem 0.625rem;
+  #quotes-section {
+    padding: 3rem;
+  }
+
+  #quotes-section .content {
+    flex-flow: column nowrap;
+    gap: 2rem;
   }
 
   #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    padding: 0;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+
+  footer .copyright {
+    font-size: 0.625rem;
   }
 }
 
