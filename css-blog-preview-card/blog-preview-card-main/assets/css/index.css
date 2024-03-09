@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+
+  /* Typography */
+  --font-size: 16px;
+  --font-figtree: "Figtree", sans-serif;
+  --font-weight-normal: 500;
+  --font-weight-bold: 800;
+
+  /* Layout */
+  --border-radius: calc(1rem + 4px);
+}
+
+/* Defaults */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-figtree);
+  font-weight: var(--font-weight-normal);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--yellow);
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Component (Card) */
+.card {
+  background-color: var(--white);
+  padding: 1rem;
+  width: min(20rem, 75%);
+  margin-inline: auto;
+  border: 1px solid var(--black);
+  border-radius: var(--border-radius);
+  box-shadow: 8px 8px 0 0 var(--black);
+  gap: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card__img-container {
+  width: 100%;
+  height: 37%;
+  border-radius: var(--border-radius);
+}
+
+.card__tag > p {
+  background-color: var(--yellow);
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.card__title {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+
+  &:active {
+    color: var(--yellow);
+  }
+}
+
+.card__desc {
+  color: var(--grey);
+  line-height: 1.5;
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  height: 3rem;
+  line-height: 0;
+
+  & .card__img {
+    & img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  & .card__name {
+    font-weight: var(--font-weight-bold);
+  }
+}
